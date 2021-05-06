@@ -3,14 +3,21 @@ import React from "react";
 import AboutSection from "../comonents/AboutSections";
 import ServicesSection from "../comonents/ServicesSection";
 import FaqSection from "../comonents/FaqSection";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animation";
 
 const AboutUs = () => {
   return (
-    <>
+    <motion.div
+      exit="exit"
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+    >
       <AboutSection />;
       <ServicesSection />;
       <FaqSection />
-    </>
+    </motion.div>
   );
 };
 

@@ -3,14 +3,16 @@ import home1 from "../img/home1.png";
 //import styled component
 // import styled from "styled-components";
 import { StyledAbout, StyledDescription, StyledImage, Hide } from "../styles";
+//framer motion
+import { motion } from "framer-motion";
 
-const AboutUs = () => {
+const AboutSection = () => {
   return (
     <StyledAbout>
       <StyledDescription className="description">
-        <div className="title">
+        <motion.div>
           <Hide>
-            <h2>We work to make</h2>
+            <motion.h2>We work to make</motion.h2>
           </Hide>
           <Hide>
             <h2>
@@ -20,7 +22,7 @@ const AboutUs = () => {
           <Hide>
             <h2>come true.</h2>
           </Hide>
-        </div>
+        </motion.div>
         <p>
           Contact us for any kind of photography or videography work, we have
           the potential professionals to work towards your dream.
@@ -34,4 +36,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutSection;
