@@ -2,57 +2,60 @@ import React from "react";
 //style
 import styled from "styled-components";
 import { StyledAbout } from "../styles";
-
+import Toggle from "./Toggle";
+import { AnimateSharedLayout } from "framer-motion";
 const FaqSection = () => {
   return (
     <StyledFaq>
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How Do I Start?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
-            quas?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Daily Schedule?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
-            quas?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Different payment methods</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
-            quas?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What product do you</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
-            quas?
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+      <AnimateSharedLayout>
+        <Toggle title="How Do I Start?">
+          <div className="question">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus, quas?
+              </p>
+            </div>
+          </div>
+        </Toggle>
+        <Toggle title="Daily Schedule?">
+          <div className="question">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus, quas?
+              </p>
+            </div>
+          </div>
+        </Toggle>
+        <Toggle title="Different payment methods">
+          <div className="question">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus, quas?
+              </p>
+            </div>
+          </div>
+        </Toggle>
+        <Toggle title="What product do you">
+          <div className="question">
+            <div className="answer">
+              <p>Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Delectus, quas?
+              </p>
+            </div>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </StyledFaq>
   );
 };
