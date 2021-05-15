@@ -16,6 +16,7 @@ import {
   scrollReveal,
 } from "../animation";
 import { useScroll } from "../comonents/useScroll";
+import ScrollTop from "../comonents/ScrollTop";
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -65,6 +66,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="" />
         </Link>
       </StyledMovie>
+      <ScrollTop />
     </StyledWork>
   );
 };
