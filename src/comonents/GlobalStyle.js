@@ -56,6 +56,10 @@ p{
     line-height: 150%
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 `;
 
 export default GlobalStyle;

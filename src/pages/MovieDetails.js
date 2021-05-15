@@ -95,8 +95,9 @@ const AwardStyle = styled.div`
 `;
 
 const ImageDisplay = styled.div`
-  min-height: 50vh;
+  min-height: 90vh;
   img {
+    padding-left: 15rem;
     widht: 100%;
     height: 100vh;
     object-fit: cover;
